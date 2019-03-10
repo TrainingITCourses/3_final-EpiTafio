@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: 'http://api-base.escuelabinaria.com/api/',
+  owner: 'alberto'
 };
