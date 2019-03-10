@@ -15,7 +15,8 @@ export const lanzamientoInitialState: LanzamientoState = {
 
 export function reducer(state = lanzamientoInitialState, action: LanzamientoActions): LanzamientoState {
   switch (action.type) {
-
+    case LanzamientoActionTypes.LoadedLanzamiento:
+    case LanzamientoActionTypes.NotLoadedLanzamiento:
     default:
       return state;
   }

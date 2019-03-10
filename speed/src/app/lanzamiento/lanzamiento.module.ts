@@ -7,9 +7,11 @@ import { ApiService } from './api.service';
 import { LanzamientoEffects } from './reducers/lanzamiento.effects';
 import { reducer } from './reducers/lanzamiento.reducer';
 import { LanzamientoContainerComponent } from 'src/app/lanzamiento/lanzamiento-container/lanzamiento-container.component';
+import { ResultadoPresenterComponent } from './resultado-presenter/resultado-presenter.component';
+import { ControlPresenterComponent } from './control-presenter/control-presenter.component';
 
 @NgModule({
-  declarations: [LanzamientoContainerComponent],
+  declarations: [LanzamientoContainerComponent, ResultadoPresenterComponent, ControlPresenterComponent],
   imports: [
     CommonModule,
     LanzamientoRoutingModule,

@@ -11,6 +11,7 @@ export class LanzamientoEffects {
 
 
 
-  constructor(private actions$: Actions) {}
+  constructor(  private actions$: Actions,
+    private api: ApiService) {}
 
 }
