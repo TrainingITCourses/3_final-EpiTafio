@@ -1,8 +1,7 @@
-<h1>Angular Speed: aplicaciones de alto rendimiento</h1>
+<nav>
+  <a routerLink="">Estados: </a>
+  <a *ngFor="let e of estados$ | async" [routerLink]="e.name">{{e.name}}. </a>
+</nav>
 
 <router-outlet></router-outlet>
-
-<footer>
-  <a href="https://trainingit.es/">Training IT</a>
-  <small>A course By <a href="https://twitter.com/albertobasalo">Alberto Basalo</a></small>
-</footer>
+<i>Developer Version: {{ developerVersion }}</i>

@@ -7,8 +7,55 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link rel="stylesheet"
+  href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+<link rel="stylesheet"
+  href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+<link rel="stylesheet"
+  href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <style>
+    .loader {
+      display: flex;
+      height: 50vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      height: 10vh;
+      width: 10vh;
+      border: 5px solid #1976d2;
+      border-top-color: #f50202;
+      border-radius: 100%;
+      animation: rotation 0.6s infinite linear 0.25s;
+      opacity: 0;
+    }
+
+    @keyframes rotation {
+      from {
+        opacity: 1;
+        transform: rotate(0deg);
+      }
+      to {
+        opacity: 1;
+        transform: rotate(359deg);
+      }
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="loader">
+      <div>
+        <h1>Lanzamientos</h1>
+        <h3>Cargando....</h3>
+        <h4>espere por favor....</h4>
+      </div>
+    </div>
+    <div class="spinner"></div>
+  </app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 </html>
